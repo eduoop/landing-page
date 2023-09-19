@@ -41,6 +41,15 @@ module.exports = {
           800: '#285E61',
           900: '#234E52',
         },
+        primaryYellow: {
+          700: '#f6e5b4',
+          800: '#f0d687',
+          900: '#eac65a',
+        },
+        primaryBlue: {
+          800: '#3f517d',
+          900: '#2e3b5b',
+        }
       },
       boxShadow: {
         xs: '0 0 0 1px rgba(0, 0, 0, 0.16)',
