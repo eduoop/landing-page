@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import Link from 'next/link'
 import Logo from './logo'
-import Dropdown from '@/components/utils/dropdown'
 import MobileMenu from './mobile-menu'
 
 const phoneNumber = process.env.CONTACT_NUMBER
@@ -39,10 +37,10 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <a href="https://api.whatsapp.com/send?phone=31982623783" target='_blank' className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Trabalhe conosco</a>
+                <a href={`https://api.whatsapp.com/send?phone=${phoneNumber}`} target='_blank' className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Trabalhe conosco</a>
               </li>
               <li>
-                <a href="https://api.whatsapp.com/send?phone=31982623783" target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <a href={`https://api.whatsapp.com/send?phone=${phoneNumber}`} target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span>Contato</span>
                 </a>
               </li>

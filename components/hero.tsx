@@ -1,6 +1,8 @@
 import VideoThumb from '@/public/images/home-icon.png'
 import ModalVideo from '@/components/modal-video'
 
+const phoneNumber = process.env.CONTACT_NUMBER
+
 export default function Hero() {
   return (
     <section className="relative">
@@ -29,12 +31,12 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Transformando Ideias em <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#eac65a] to-blue-600">Tecnologia</span></h1>
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Transformando Ideias em <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#eac65a] to-blue-600">Tecnologia</span></h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Combinamos criatividade, expertise técnica e inovação para materializar as ideias dos nossos clientes em produtos e serviços que impulsionam o progresso e o sucesso.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a href="https://api.whatsapp.com/send?phone=31982623783" target='_blank' className="btn text-white bg-primaryYellow-900 hover:bg-primaryYellow-800 w-full mb-4 sm:w-auto sm:mb-0">Conheçer</a>
+                  <a href={`https://api.whatsapp.com/send?phone=${phoneNumber}`} target='_blank' className="btn text-white bg-primaryYellow-900 hover:bg-primaryYellow-800 w-full mb-4 sm:w-auto sm:mb-0">Conheçer</a>
                 </div>
                 <div>
                   <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#inovation">Soluções</a>

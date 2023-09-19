@@ -3,6 +3,8 @@ import { BsInstagram } from "react-icons/bs"
 import { BsLinkedin } from "react-icons/bs"
 import { BsWhatsapp } from "react-icons/bs"
 
+const phoneNumber = process.env.CONTACT_NUMBER
+
 export default function Footer() {
   return (
     <footer>
@@ -29,7 +31,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="ml-4">
-              <a href="https://api.whatsapp.com/send?phone=31982623783" target='_blank' className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
+              <a href={`https://api.whatsapp.com/send?phone=${phoneNumber}`} target='_blank' className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
                 <div className='flex items-center justify-center w-[32px] h-[32px] shadow-md bg-white rounded-full'>
                   <BsWhatsapp />
                 </div>

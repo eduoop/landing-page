@@ -1,6 +1,8 @@
 "use client"
 import {useState} from "react"
 
+const phoneNumber = process.env.CONTACT_NUMBER
+
 export default function Newsletter() {
 
   const [message, setMessage] = useState("")
@@ -50,7 +52,7 @@ export default function Newsletter() {
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <input onChange={e => setMessage(e.target.value)} type="text" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Sua mensagem..." aria-label="Sua mensagem..." />
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href={`https://api.whatsapp.com/send?phone=31982623783&text=${message}`} target="_blank">Enviar</a>
+                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`} target="_blank">Enviar</a>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

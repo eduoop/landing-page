@@ -29,55 +29,55 @@ export default function FeaturesBlocks() {
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-[220px]">
-              <div className="w-[53px] h-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
+              <div className="w-[53px] h-[53px] min-h-[53px] min-w-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
                 <LuBookMarked color="white" fontSize={25} />
               </div>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Experiência Técnica Profunda</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight text-center my-2">Experiência Técnica Profunda</h4>
               <p className="text-gray-600 text-center">Equipe experiente em programação, design e tecnologia, soluções inovadoras.</p>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-[220px]">
-              <div className="w-[53px] h-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
+              <div className="w-[53px] h-[53px] min-h-[53px] min-w-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
                 <LuClipboardCheck color="white" fontSize={25} />
               </div>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Compromisso com a Qualidade</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight text-center my-2">Compromisso com a Qualidade</h4>
               <p className="text-gray-600 text-center">Rigor no controle de qualidade para superar expectativas dos clientes.</p>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-[220px]">
-              <div className="w-[53px] h-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
+              <div className="w-[53px] h-[53px] min-h-[53px] min-w-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
                 <BiConversation color="white" fontSize={25} />
               </div>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Comunicação Efetiva</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight text-center my-2">Comunicação Efetiva</h4>
               <p className="text-gray-600 text-center">Comunicação clara, entendimento das necessidades do cliente, transparência em projetos.</p>
             </div>
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-[220px]">
-              <div className="w-[53px] h-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
+              <div className="w-[53px] h-[53px] min-h-[53px] min-w-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
                 <PiGearSixBold color="white" fontSize={25} />
               </div>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Flexibilidade e Adaptabilidade</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight text-center my-2">Flexibilidade e Adaptabilidade</h4>
               <p className="text-gray-600 text-center">Flexibilidade para adaptar-se a tecnologias e demandas, oferecendo soluções relevantes.</p>
             </div>
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-[220px]">
-              <div className="w-[53px] h-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
+              <div className="w-[53px] h-[53px] min-h-[53px] min-w-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
                 <TbClockCheck color="white" fontSize={25} />
               </div>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Prazo de Entrega Confiável</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight text-center my-2">Prazo de Entrega Confiável</h4>
               <p className="text-gray-600 text-center">Garantimos pontualidade, valorizando a satisfação do cliente.</p>
             </div>
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-[220px]">
-              <div className="w-[53px] h-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
+              <div className="w-[53px] h-[53px] min-h-[53px] min-w-[53px] rounded-full flex items-center justify-center bg-[#0070F4]">
                 <BiTargetLock color="white" fontSize={25} />
               </div>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Foco no Cliente</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight text-center my-2">Foco no Cliente</h4>
               <p className="text-gray-600 text-center">Ouvimos, compreendemos e colaboramos para soluções personalizadas.</p>
             </div>
 

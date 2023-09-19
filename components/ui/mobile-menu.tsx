@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
-import Link from 'next/link'
+
+const phoneNumber = process.env.CONTACT_NUMBER
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -65,14 +66,14 @@ export default function MobileMenu() {
         >
           <ul className="px-5 py-2">
             <li>
-              <a href="https://api.whatsapp.com/send?phone=31982623783" target='_blank' className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Trabalhe conosco</a>
+              <a href={`https://api.whatsapp.com/send?phone=${phoneNumber}`} target='_blank' className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Trabalhe conosco</a>
             </li>
             <li>
-              <a href="https://api.whatsapp.com/send?phone=31982623783" target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2" onClick={() => setMobileNavOpen(false)}>
+              <a href={`https://api.whatsapp.com/send?phone=${phoneNumber}`} target='_blank' className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2" onClick={() => setMobileNavOpen(false)}>
                 <span>Contato</span>
               </a>
             </li>
-          </ul>          
+          </ul>
         </Transition>
       </div>
     </div>
