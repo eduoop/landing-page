@@ -13,7 +13,7 @@ export default function Header() {
 
   // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
-    window.pageYOffset > 10 ? setTop(false) : setTop(true)
+    window.scrollY > 10 ? setTop(false) : setTop(true)
   }  
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Site branding */}
-          <div className="shrink-0 mr-4">
+          <div className="mr-4">
             <Logo />
           </div>
 

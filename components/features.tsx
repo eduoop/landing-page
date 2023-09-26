@@ -7,12 +7,12 @@ import FeaturesBg from '@/public/images/features-bg.png'
 import Mobile from '@/public/images/mobile-img.png'
 import Desk from '@/public/images/sistem.png'
 import Site from '@/public/images/site.png'
-import {FiSmartphone} from "react-icons/fi"
-import {CgScreen} from "react-icons/cg"
-import {TfiWorld} from "react-icons/tfi"
+import { FiSmartphone } from "react-icons/fi"
+import { CgScreen } from "react-icons/cg"
+import { TfiWorld } from "react-icons/tfi"
 
 export default function Features() {
-  
+
   const [tab, setTab] = useState<number>(1)
 
   const tabs = useRef<HTMLDivElement>(null)
@@ -23,7 +23,7 @@ export default function Features() {
 
   useEffect(() => {
     heightFix()
-  }, []) 
+  }, [])
 
   return (
     <section className="relative" id='inovation'>
@@ -59,10 +59,10 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Aplicativos</div>
-                    <div className="text-gray-600">Com a expertise de nossos analistas experientes, seu projeto ganhará vida, evoluindo para um ambiente digital cada vez mais robusto.</div>
+                    <div className="text-gray-600">Aplicativos aumentam a visibilidade, simplificam interações e impulsionam a fidelidade do cliente, melhorando a eficiência e os lucros.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                  <FiSmartphone />
+                    <FiSmartphone />
                   </div>
                 </a>
                 <a
@@ -72,10 +72,10 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Sistemas</div>
-                    <div className="text-gray-600">Criação de aplicativos de alto desempenho adequados a empresas de todas as dimensões.</div>
+                    <div className="text-gray-600">Sistemas automatizam processos, aumentam a produtividade, melhoram a tomada de decisões e reduzem erros, impulsionando o crescimento empresarial. </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                  <CgScreen />
+                    <CgScreen />
                   </div>
                 </a>
                 <a
@@ -85,10 +85,10 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Lojas virtuais e sites</div>
-                    <div className="text-gray-600">Sua empresa merece uma presença online única, com um site e uma loja virtual responsivos, projetados para impulsionar suas taxas de conversão.</div>
+                    <div className="text-gray-600">Sites ampliam a presença online, alcançam novos clientes, fornecem informações 24/7 e fortalecem a credibilidade da empresa.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                   <TfiWorld/>
+                    <TfiWorld />
                   </div>
                 </a>
               </div>
@@ -110,7 +110,7 @@ export default function Features() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
                     beforeEnter={() => heightFix()}
-                    unmount={false}                     
+                    unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
                       <Image className="md:max-w-none mx-auto rounded" src={Mobile} width={500} height="462" alt="Features bg" />
@@ -129,7 +129,7 @@ export default function Features() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
                     beforeEnter={() => heightFix()}
-                    unmount={false}                     
+                    unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
                       <Image className="md:max-w-none mx-auto rounded" src={Desk} width={500} height="462" alt="Features bg" />
@@ -148,7 +148,7 @@ export default function Features() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
                     beforeEnter={() => heightFix()}
-                    unmount={false}                     
+                    unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
                       <Image className="md:max-w-none mx-auto rounded" src={Site} width={500} height="462" alt="Features bg" />
